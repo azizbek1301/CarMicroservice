@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34322.80
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{53DDDBF2-87C4-484C-AF9D-6D226892C119}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarMicroserviceApi", "CarMicroserviceApi\CarMicroserviceApi.csproj", "{464E9072-7497-417F-9A80-3D3C00DB8EAF}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{AE9A61CA-4E35-464D-9F95-5ADA43D92C2C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{464E9072-7497-417F-9A80-3D3C00DB8EAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{464E9072-7497-417F-9A80-3D3C00DB8EAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{464E9072-7497-417F-9A80-3D3C00DB8EAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{464E9072-7497-417F-9A80-3D3C00DB8EAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE9A61CA-4E35-464D-9F95-5ADA43D92C2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE9A61CA-4E35-464D-9F95-5ADA43D92C2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE9A61CA-4E35-464D-9F95-5ADA43D92C2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE9A61CA-4E35-464D-9F95-5ADA43D92C2C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{464E9072-7497-417F-9A80-3D3C00DB8EAF} = {53DDDBF2-87C4-484C-AF9D-6D226892C119}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {40726441-8688-4B9A-9A08-8F7296537066}
+	EndGlobalSection
+EndGlobal

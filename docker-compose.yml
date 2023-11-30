@@ -1,0 +1,28 @@
+version: '3.4'
+
+networks:
+    backend:    
+  
+services:
+   cardb:
+        container_name: car_dbcontainer
+        image: mcr.microsoft.com/mssql/server:2022-latest
+        environment:
+            - ACCEPT_EULA=Y
+            - SA_PASSWORD=pa@2or$%%dd
+        networks:
+            - backend
+        ports:
+            - 7070:1433
+   carmicroserviceapi:
+        container_name: carapi-contaioner
+        image: ${DOCKER_REGISTRY-}carmicroserviceapi
+        build:
+            context: .
+            dockerfile: CarMicroserviceApi/Dockerfile
+        networks:
+            - backend
+        environment:
+            - DB_HOST=cardb
+            - DB_NAME=CarDb
+            - DB_SA_PASSWORD=pa@2or$%%dd
